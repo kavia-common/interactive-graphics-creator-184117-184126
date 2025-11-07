@@ -2,21 +2,28 @@
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 
-## Features
+## New Feature: Photo Upload Canvas
 
-- **Lightweight**: No heavy UI frameworks - uses only vanilla CSS and React
-- **Modern UI**: Clean, responsive design with KAVIA brand styling
-- **Fast**: Minimal dependencies for quick loading times
-- **Simple**: Easy to understand and modify
+- Upload one or more images (PNG/JPG/JPEG) via the "Upload Images" button or drag-and-drop into the workspace.
+- Click an image to select it and drag to reposition it within the canvas area.
+- Use the "Clear Canvas" button to remove all images.
+- Styling follows the "Ocean Professional" theme.
 
-## Getting Started
+### How to run
 
 In the project directory, you can run:
 
-### `npm start`
+- `npm start` — Runs the app in development mode.
+  - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Notes
+
+- This is a client-only implementation; no backend is required.
+- Images are displayed using object URLs which are revoked when clearing the canvas.
+
+## Getting Started (template)
+
+The rest of the template documentation applies as before.
 
 ### `npm test`
 
@@ -29,17 +36,17 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ## Customization
 
-### Colors
+### Colors (Ocean Professional)
 
 The main brand colors are defined as CSS variables in `src/App.css`:
 
 ```css
 :root {
-  --kavia-orange: #E87A41;
-  --kavia-dark: #1A1A1A;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  --primary: #2563EB;
+  --secondary: #F59E0B;
+  --background: #f9fafb;
+  --surface: #ffffff;
+  --text: #111827;
 }
 ```
 
@@ -48,10 +55,10 @@ The main brand colors are defined as CSS variables in `src/App.css`:
 This template uses pure HTML/CSS components instead of a UI framework. You can find component styles in `src/App.css`. 
 
 Common components include:
-- Buttons (`.btn`, `.btn-large`)
-- Container (`.container`)
-- Navigation (`.navbar`)
-- Typography (`.title`, `.subtitle`, `.description`)
+- Buttons
+- Container
+- Navigation
+- Typography
 
 ## Learn More
 
