@@ -1,0 +1,4 @@
+{
+    "command": "npm run test",
+    "working_directory": "/home/kavia/workspace/code-generation/interactive-graphics-creator-184117-184126/graphics_frontend"
+}
